@@ -89,6 +89,18 @@ input{
     transition: 0.5s;
     border: 1px solid #000000;
 }
+.input-container:focus-within{
+  transition: 0.5s;
+  border: 1px solid #FA2F2F;
+}
+.erro-senha{
+  visibility: hidden;
+  margin-top: 8px;
+  font-size: 0.875rem;
+  color: #FA2F2F;
+  font-weight: 500;
+  line-height: normal;
+}
 .button{
     display: flex;
     justify-content: center;
