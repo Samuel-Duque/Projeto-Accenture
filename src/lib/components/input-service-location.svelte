@@ -32,9 +32,10 @@
         margin: 20px 20px 0px 20px;
         padding: 16px 75px 16px 24px ;
         align-items: center;
-        border: 1.2px solid #CECECE;
+        border: 1px solid #CECECE;
+        border-bottom: 0.5 solid #CECECE;
         background: #FFF;
-
+        
     }
     .caixa-formulario2 {
         width: 710px;
@@ -43,7 +44,8 @@
         margin: 0px 0px 20px 20px;
         padding: 16px 75px 16px 24px ;
         align-items: center;
-        border: 1.2px solid #CECECE;
+        border: 1px solid #CECECE;
+        border-top: 0.5 solid #CECECE;
         background: #FFF;
 
     }
