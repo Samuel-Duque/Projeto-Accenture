@@ -7,7 +7,7 @@
 
 
 <Header>
-    <slot />
+    <slot/>
 </Header>
 
 <InputServiceLocation>
@@ -17,4 +17,10 @@
 <SwitchButton> 
     <slot />
 </SwitchButton>
- 
+
+<script>
+.SwitchButton{
+    display: flex;
+    margin-left: 20px;
+}
+</script>
