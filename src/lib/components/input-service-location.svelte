@@ -8,7 +8,7 @@
             <label for="nome-completo">O que você precisa encontrar?</label>
         </div>
         <div class="input-container">
-            <input name="nome-completo" placeholder="Digite o serviço desejado (ex: Eletricista, Encanador, Babá)..." type="email" required />
+            <input name="nome-completo" placeholder="Digite o serviço desejado (ex: Eletricista, Encanador, Babá)..." type="text" required />
         </div>
     </form>
 </div>
@@ -19,7 +19,7 @@
             <label for="nome-completo">Onde você precisa dos serviços?</label>
         </div>
         <div class="input-container">
-            <input name="nome-completo" placeholder="Informe a sua localização (ex: Bairro, Cidade, CEP)..." type="email" required />
+            <input name="nome-completo" placeholder="Informe a sua localização (ex: Bairro, Cidade, CEP)..." type="text" required />
         </div>
     </form>
 </div>
@@ -32,10 +32,9 @@
         margin: 20px 20px 0px 20px;
         padding: 16px 75px 16px 24px ;
         align-items: center;
-        border: 1px solid #CECECE;
-        border-bottom: 0.5 solid #CECECE;
+        border: 1.2px solid #CECECE;
         background: #FFF;
-        
+
     }
     .caixa-formulario2 {
         width: 710px;
@@ -44,8 +43,7 @@
         margin: 0px 0px 20px 20px;
         padding: 16px 75px 16px 24px ;
         align-items: center;
-        border: 1px solid #CECECE;
-        border-top: 0.5 solid #CECECE;
+        border: 1.2px solid #CECECE;
         background: #FFF;
 
     }
@@ -57,7 +55,7 @@
     input{
         background-color: #ffffff;
         border: none;
-        margin-left: 40px;
+        margin-left: 35px;
         width: 80%;
         outline: none;
     }
