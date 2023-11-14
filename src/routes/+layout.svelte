@@ -9,7 +9,7 @@
 
 
 <Header>
-    <slot />
+    <slot/>
 </Header>
 
 <div class="background">
