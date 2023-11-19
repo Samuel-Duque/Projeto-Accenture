@@ -3,6 +3,8 @@
   import logoRetractable from "$lib/assets/icons/pescoujobs-logo-retractable.svg";
   import Button from "./Button.svelte";
   import account from "$lib/assets/icons/account.svg";
+  import SearchBar from "./SearchBar.svelte";
+  import SearchBarLocation from "./SearchBar-Location.svelte";
 
   const handleNavigateLogin = () => {
     window.location.href = "/auth/login";
@@ -13,12 +15,17 @@
 <header>
   <!-- <img src={logoRetractable} alt="Logo PescouJobs" class="pescoujobs-logo-retractable"/> -->
   <nav id="desktop-menu">
-    <a href="/"><img src={logo} alt="Logo PescouJobs" class="pescoujobs-logo" /></a>
+    <div class="search-bar">
+      <a href="/"><img src={logo} alt="Logo PescouJobs" class="pescoujobs-logo" /></a>
+      <SearchBar/>
+      <SearchBarLocation/>
+    </div>
+
     <div class="container-nav">
       <ul>
-        <li><a href="/">Para prestadores</a></li>
+        <li><a href="/dashboard">Para prestadores</a></li>
         <li><a href="/">Ajuda</a></li>
-        <li><a href="\auth\register">Cadastrar</a></li>
+        <li><a href="/auth/register">Cadastrar</a></li>
       </ul>
       <Button
         text="Entrar"
@@ -28,6 +35,7 @@
         onClick={handleNavigateLogin}
       />
     </div>
+    
   </nav>
   <nav id="mobile-menu">
     <img src={logoRetractable} alt="Logo PescouJobs" class="pescoujobs-logo-retractable" />
@@ -35,6 +43,13 @@
 </header>
 
 <style>
+  .search-bar{
+    display: flex;
+    /* width: 1098px; */
+    align-items: center;
+    gap: 30px;
+    flex-shrink: 0;
+  }
   header {
     border-bottom: 1px solid var(--theme-border-color-primary);
   }
